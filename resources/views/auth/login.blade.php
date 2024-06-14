@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/login.css') }}"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
-    <div class="container"> <!-- Aquí se aplica la clase 'container' -->
+    <div class="container">
         <h1>Iniciar Sesión en SGT</h1>
         <form method="POST" action="{{ url('/login') }}">
             @csrf
