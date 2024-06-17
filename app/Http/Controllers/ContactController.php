@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function showContactForm()
     {
-        return view('contact');
+        return view('contact.contact');
     }
 
     public function submitContactForm(Request $request)
@@ -25,3 +25,4 @@ class ContactController extends Controller
         return redirect()->route('contact')->with('success', 'Mensaje enviado con éxito!');
     }
 }
+
