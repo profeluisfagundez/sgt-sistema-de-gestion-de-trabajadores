@@ -11,7 +11,8 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/home', [WorkerController::class, 'index'])->name('home');
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/workers', [WorkerController::class, 'workers'])->name('workers');
     Route::get('/contact', [ContactController::class, 'showContactForm'])->name('contact');
     Route::post('/contact', [ContactController::class, 'submitContactForm'])->name('contact.submit');
 });

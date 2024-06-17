@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class WorkerController extends Controller
 {
-    public function index()
+    public function workers()
     {
         $workers = Worker::all();
-        return view('workers.index', compact('workers'));
+        return view('workers.workers', compact('workers'));
     }
 }
