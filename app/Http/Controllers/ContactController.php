@@ -19,9 +19,7 @@ class ContactController extends Controller
             'email' => 'required|email|max:255',
             'message' => 'required|string',
         ]);
-
-        // Lógica para manejar el envío del formulario, como enviar un correo electrónico o guardar los datos en la base de datos
-
+        // Falta implementar la lógica
         return redirect()->route('contact')->with('success', 'Mensaje enviado con éxito!');
     }
 }
