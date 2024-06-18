@@ -10,7 +10,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="{{ url('/') }}">Inicio</a></li>
+                <li><a href="{{ url('/home') }}">Inicio</a></li>
                 <li><a href="{{ url('/contact') }}">Contacto</a></li>
                 <li><a href="{{ url('/workers') }}">Trabajadores</a></li>
                 @auth

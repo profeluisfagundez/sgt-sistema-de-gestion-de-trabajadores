@@ -13,6 +13,14 @@
                 <li><a href="{{ url('/home') }}">Inicio</a></li>
                 <li><a href="{{ url('/contact') }}">Contacto</a></li>
                 <li><a href="{{ url('/workers') }}">Trabajadores</a></li>
+                @auth
+                    <li>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit">Cerrar Sesión</button>
+                        </form>
+                    </li>
+                @endauth
             </ul>
         </nav>
     </header>

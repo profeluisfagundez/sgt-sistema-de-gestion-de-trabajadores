@@ -15,32 +15,41 @@
                 <li><a href="{{ url('/home') }}">Inicio</a></li>
                 <li><a href="{{ url('/contact') }}">Contacto</a></li>
                 <li><a href="{{ url('/workers') }}">Trabajadores</a></li>
+                @auth
+                    <li>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit">Cerrar Sesión</button>
+                        </form>
+                    </li>
+                @endauth
             </ul>
         </nav>
     </header>
-    <h1>Lista de Trabajadores</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Posición</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($workers as $worker)
-            <tr>
-                <td>{{ $worker->name }}</td>
-                <td>{{ $worker->position }}</td>
-                <td>{{ $worker->email }}</td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
-    <form method="POST" action="{{ route('logout') }}">
-        @csrf
-        <button type="submit">Cerrar Sesión</button>
-    </form>
+    <div class="container">
+        <h1>Lista de Trabajadores</h1>
+        @if(session('success'))
+            <div class="success-message">{{ session('success') }}</div>
+        @endif
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Posición</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($workers as $worker)
+                <tr>
+                    <td>{{ $worker->name }}</td>
+                    <td>{{ $worker->position }}</td>
+                    <td>{{ $worker->email }}</td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
