@@ -12,7 +12,8 @@
             <ul>
                 <li><a href="{{ url('/home') }}">Inicio</a></li>
                 <li><a href="{{ url('/contact') }}">Contacto</a></li>
-                <li><a href="{{ url('/workers') }}">Trabajadores</a></li>
+                <li><a href="{{ route('workers.create') }}">Cargar Trabajador</a></li>
+                <li><a href="{{ url('/workers') }}">Listar trabajadores</a></li>
                 @auth
                     <li>
                         <form method="POST" action="{{ route('logout') }}">
