@@ -1,8 +1,15 @@
+/* workers.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
 header {
     width: 100%;
-    background-color: #0288d1;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #0288d1; 
 }
 
 nav {
@@ -32,23 +39,21 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e0f7fa;
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1 {
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    margin-bottom: 15px;
     text-align: center;
-    color: #0288d1;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-form {
-    text-align: center;
-    margin-top: 20px;
 }
 
 table {
@@ -85,19 +90,8 @@ nav ul li form button:hover {
     background-color: #c62828; 
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.success-message {
-    background-color: #dff0d8;
-    color: #3c763d;
-    padding: 10px;
-    border: 1px solid #d6e9c6;
-    border-radius: 4px;
-    margin-bottom: 15px;
+h1 {
+    color: #0288d1;
     text-align: center;
 }
+

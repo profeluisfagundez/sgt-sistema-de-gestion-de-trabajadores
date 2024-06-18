@@ -16,12 +16,12 @@
                 <li><a href="{{ url('/contact') }}">Contacto</a></li>
                 <li><a href="{{ url('/workers') }}">Trabajadores</a></li>
                 @auth
-                    <li>
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <button type="submit">Cerrar Sesión</button>
-                        </form>
-                    </li>
+                <li>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit">Cerrar Sesión</button>
+                    </form>
+                </li>
                 @endauth
             </ul>
         </nav>
@@ -29,7 +29,7 @@
     <div class="container">
         <h1>Lista de Trabajadores</h1>
         @if(session('success'))
-            <div class="success-message">{{ session('success') }}</div>
+        <div class="success-message">{{ session('success') }}</div>
         @endif
         <table>
             <thead>

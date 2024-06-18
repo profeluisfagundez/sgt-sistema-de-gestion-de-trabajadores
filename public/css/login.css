@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f7fa; /* Cambiado a un tono similar al de tu paleta */
+    background-color: #e0f7fa; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #ffffff; /* Color de fondo */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    color: #0288d1; /* Color del título */
+    color: #0288d1;
 }
 
 form {
@@ -30,20 +30,20 @@ form {
 label {
     font-weight: bold;
     margin-bottom: 8px;
-    color: #0277bd; /* Color del texto de las etiquetas */
+    color: #0277bd;
 }
 
 input[type="email"],
 input[type="password"] {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #0288d1; /* Color del borde */
+    border: 1px solid #0288d1; 
     border-radius: 4px;
     font-size: 14px;
 }
 
 button[type="submit"] {
-    background-color: #0288d1; /* Color de fondo del botón */
+    background-color: #0288d1; 
     color: white;
     border: none;
     padding: 12px;
@@ -53,10 +53,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0288e7; /* Color de fondo del botón al pasar el cursor */
+    background-color: #0288e7; 
 }
 
 .error-message {
-    color: #ff0000; /* Color del mensaje de error */
+    color: #ff0000; 
     margin-top: 10px;
 }
