@@ -50,7 +50,7 @@ nav ul li a:hover {
     width: 100%;
     max-width: 400px;
     text-align: center;
-    margin-top: 20px; /* Ajuste para que el contenido no esté pegado al menú */
+    margin-top: 20px;
 }
 
 h1 {
@@ -107,3 +107,19 @@ button:hover {
     border-radius: 4px;
     margin-bottom: 15px;
 }
+
+/* Styles for logout button */
+nav ul li form button {
+    background-color: #d9534f;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul li form button:hover {
+    background-color: #c9302c;
+}
+
